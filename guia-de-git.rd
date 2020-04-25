@@ -151,5 +151,20 @@ $ git diff <nome do arquivo>
 (ver a diferença entre determinado arquivo)
 ...
 
+	* Revertendo modificações de um unico arquivo:
+
+Aprendemos como reverter commits e trazer novas modificações, mas e se você modificou varios arquivos e quer voltar apenas um arquivo em como ele estava antes do commit anterior. E então precisaremos aprender um novo comando:
+
+...
+$ git checkout HEAD -- <nome de arquivo>
+(trazendo as configurações anteriores)
+...
+
+Agora podemos, no branch que estamos atravéz do comando HEAD, voltar, com o comando checkout, para o estado anterior.
+
+
+
+
+
 
 
