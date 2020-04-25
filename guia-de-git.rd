@@ -14,16 +14,15 @@ Agora que você, se não sabia, já sabe o que é o git, está pronto para conti
 Você precisara fazer algumas configurações em seu git apos instalar em sua maquina, e para começar os seus projetos, você precisara de uma pasta para guardar seus projetos. Este guia estara sempre mostrando comandos no terminal para o Linux, se quisar usar outro sistema terá que dar uma pesquisada mais aí.
 
 ...
-
 $ git config --global user.name "seu nome"
 (configurar seu nome)
 $ git config --global user.email seu email
 (configurar seu email)
 $ git config --global core.editor "seu editor"
 (configurar seu editor padrão como o VSCode ou Sublime)
-$ mkdir <nome do diretório> 
+$ mkdir <nome do diretorio> 
 (Diretório de progetos)
-$ git init <nome do repositório criado>
+$ git init <nome do repositorio criado>
 (Aqui o git é iniciado em seu repositório com uma pasta .git)
 md <nome do diretorio>
 (aqui nos entramos no diretorio que você ira salvar seus arquivos)
@@ -32,11 +31,9 @@ md <nome do diretorio>
 Pronto! Agora você tem o git configurado com seu nome, email, editor e em sua pasta, assim poderá começar seus projetos, para ver suas configuração digite o comando:
 
 ...
-
 $ git config --list
 clear
 (Para apagar tudo e começar a trabalhar, comando opcional)
-
 ...
 
 	* Criando nossos arquivos: 
@@ -44,7 +41,6 @@ clear
 Agora vamos criar nossos arquivos, todo repositório tem como padão, criar um README.md e um LICENSE. No README.md, você descreve seu projeto, colocando para que ele serve, e algumas informações adicionais, e o LICENSE, para escrever qual sua licença quado for jogar isso em uma máquina remota como o github, e provavelmente você ira escoher a licensa MIT.
 
 ...
-
 $ touch README.md
 (criar um arquivo chamado README, você tambem pode trazer um arquivo ja pronto)
 $ touch LICENSE
@@ -52,7 +48,6 @@ $ touch LICENSE
 $ git add README.md
 $ git add LICENSE
 (até agora o repositório estava apenas em seu diretório, agora você o adicionou ao git)
-
 ...
 
 Pronto! agora você tem os dois arquivos padrão e agora adicione os arquivos que você quiser como seu projeto, seu site, ou somente seus lembretes mesmo se quiser.
@@ -62,14 +57,12 @@ Pronto! agora você tem os dois arquivos padrão e agora adicione os arquivos qu
 Agora vamos salvar esses arquivos em seu git, pois até agora você criou dois arquivos e os adicionou ao git, porem para salvar esses arquivos no git é necessário dar o commit, que salva as alterações, se você quiser ver o status de seu git digite ... git status ... e agora você vê que tem arquivos não salvos e para salva-los vamos fazer nosso commit.
 
 ...
-
 $ git commit -m "Primeiro commit"
 (fazendo commit)
 $ git status
 (ver que não ha mais alterações)
 $ git log
 (ver seus commits)
-
 ...
 
 Você pode adicionar os arquivos no git e na mesma linha já criar um commit com o comando ... $ git commit -am "Primeiro commit", e esse a atrás do m vem de adicionar e o m de minimizar, ou seja, um commit simples com descrição.
@@ -80,7 +73,6 @@ Se você quiser adicionar um arquivos, ou modificalos, tera que fazer um novo co
 E você pode modificar, abrindo seu editor, ou por comando mesmo, vamos supor que você queira acressentar algo em seu README.md, pois por enquanto você só adicionou ele mais não colocou nada:
 
 ...
-
 $ echo "Esse arquivo é feito para..." > README.md
 (escrever em README.md)
 $ git status
@@ -94,10 +86,70 @@ $ git log
 $ echo "Alterando arquivo" >> README.md
 (fazer alterações em README, >> para acresentar linha)
 $ git commit -m "Adicionando linha em README.md"
-
 ...
 
 Pronto! Agora você pode adicionar, renomear e modificar os seus arquivos e após isso é só gerar um commit para salvar.
 *Obs: o README.md pode ser escrito em markdown, que é uma linguagem de hipertexto para documentos.
+
+
+	* Voltando em versões anteriores:
+
+Se você fez uma modificação em um determinado arquivo e agora percebeu que acabou dando problema e precisa da versão anterior, o git tambem faz isso para você. Cada commit tem um codigo, e precisaremos deste código para poder voltar. Você pode consutar ele com o comando ... $ git log ...
+E agora se juntarmos esse código ao comando abaixo, poderemos então restaurar o projeto antes do commit, ou em qual commit você quiser.
+
+...
+$ git log
+(consutar o código)
+$ git reset --hard <codigo>
+(volta no commit que selecionou)
+...
+
+E agora você não pede mais os arquivos modificados.
+
+	* Navegando entre as branch:
+
+As branch, podem serem entendidas como versões do seu projeto, de padrão se inicia com a branch master, onde você adiciona, renomeia e modifica seus arquivos. Mas você pode tambem ter uma branch teste e após comitar em seu projeto e ver que pode adicionar ou testar um recurso, você pode adicionar uma nova versão como a teste e modificar testar e fazer o que quiser nela que na branch master estara intacta. Vamos fazer alguns testes para entender melhor esse recurso.
+
+...
+$ git branch
+(Ver em qual branch estamos)
+$ git branch teste
+(Cria uma nova branch)
+$ git checkout teste
+(Ir para branch teste)
+(Agora podemos modificaros arquivos)
+$ git commit --m "Modificação em nova branch"
+(Fazer o commit em nova branch)
+$ git checkout master
+(Voltar para branch master)
+$ git status
+(Ver que nada mudou nesta nova branch)
+git branch
+(Ver que mudamos para essa nova branch)
+...
+
+	* Comando diff:
+
+Quando estamos trabalhando com dois arquivos é possivel tirar a diferença entre eles, ou seja, o Path entre eles, e o comando diff faz exatamente isso, tira o Path dos arquivos.
+
+...
+$ git diff
+(Tirar a diferença)
+...
+
+Agora você pode ver tudo que foi modificado e fazer seu commit. É possivel tambem com o comando diff ver só quais arquivos foram modificados:
+
+...
+$ git diff --name-only
+(Ver os arquivos modificados)
+...
+
+Tambem é possivel dirar a diff de apenas um arquivo em especifico, como por exemplo:
+
+...
+$ git diff <nome do arquivo>
+(ver a diferença entre determinado arquivo)
+...
+
 
 
