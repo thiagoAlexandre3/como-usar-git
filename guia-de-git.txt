@@ -162,9 +162,36 @@ $ git checkout HEAD -- <nome de arquivo>
 
 Agora podemos, no branch que estamos atravéz do comando HEAD, voltar, com o comando checkout, para o estado anterior.
 
+	* Salvando no GitHub:
 
+Você precisara agora salvar seus projetos no GitHub, pois ate agora, os arquivos estão salvos apenas em sua maquina local, você precisa passar isso para uma maquina remota como o GitHub. E para fazer isso você precisara fazer uma conta no GitHub, se não tiver e criar um repositório. 
+Após isso, você precisara dar um push, ou seja, enviar o repositório que esta em sua maquina para o GitHub, criando uma SSH e configurando ela no Git onde tem a opção configurações. E para fazer isso, você precisa gerar uma chave ssh e por ela passar seus arquivos para o github. Primeiro vamos gerar essa chave ssh com o seguite comando:
 
+...
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+(gerar chave ssh)
+(obs: o e-mail deve ser o mesmo que o do github)
+(e assim, ele mostrara onde ele ira salvar a chave publica e a privada, aperte [enter])
+(depois informe sua senha e depois confirme ela novamente)
+...
 
+Agora precisamos passar essa chave para o GitHub e transferir os arquivos. Entre no local onde ele baixou a chave, copie essa chave (não o arquivo, o conteúdo dele), acesse seu GitHub clicle em seu avatar do canto superior direito e clica em setings. Após isso clice em ssh and gpq keys, crie uma nova ssh e cole a chave na opção informada, e escreva um titulo, que lembre seu pc por exemplo <seu usuário> home.
+
+Pronto! você agora tem uma chave ssh, vamos passar os arquivos através dessa chave. Escreva em seu terminal:
+
+...
+$ git remote add origin https://<o endereço de seu repositorio do github>.git
+(adicionar repositorio origin em ...)
+(você pode ver se ele adicionou com git remote)
+$ git push -u origin master
+(da um push do branch master para o repositório origin)
+...
+
+Pronto! você ja tem o repositório no GitHub, basta atualisar seu GitHub que o repositório estara lá.
+
+	* Dando Push e Feth:
+
+Se você ainda não sabe, Push é basicamente que empurrar, e quando se aplica ele no termina ou manda o GitHub dar um Push, é o mesmo que dizer empurre, ou transfira os arquivos para o GitHub. Já o Feth é para atualizar o repositório local, para ver se não foram feita nenhuma alteração do GitHub, sim da para alterar pelo GitHub.
 
 
 
