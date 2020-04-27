@@ -36,6 +36,8 @@ clear
 (Para apagar tudo e começar a trabalhar, comando opcional)
 ...
 
+***
+
    * Criando nossos arquivos: 
 
 Agora vamos criar nossos arquivos, todo repositório tem como padão, criar um README.md e um LICENSE. No README.md, você descreve seu projeto, colocando para que ele serve, e algumas informações adicionais, e o LICENSE, para escrever qual sua licença quado for jogar isso em uma máquina remota como o github, e provavelmente você ira escoher a licensa MIT.
@@ -52,6 +54,8 @@ $ git add LICENSE
 
 Pronto! agora você tem os dois arquivos padrão e agora adicione os arquivos que você quiser como seu projeto, seu site, ou somente seus lembretes mesmo se quiser.
 
+***
+
    * Primeiro commit:
 
 Agora vamos salvar esses arquivos em seu git, pois até agora você criou dois arquivos e os adicionou ao git, porem para salvar esses arquivos no git é necessário dar o commit, que salva as alterações, se você quiser ver o status de seu git digite ... git status ... e agora você vê que tem arquivos não salvos e para salva-los vamos fazer nosso commit.
@@ -66,6 +70,8 @@ $ git log
 ...
 
 Você pode adicionar os arquivos no git e na mesma linha já criar um commit com o comando ... $ git commit -am "Primeiro commit", e esse a atrás do m vem de adicionar e o m de minimizar, ou seja, um commit simples com descrição.
+
+***
 
    * Modificando arquivos:
 
@@ -91,6 +97,7 @@ $ git commit -m "Adicionando linha em README.md"
 Pronto! Agora você pode adicionar, renomear e modificar os seus arquivos e após isso é só gerar um commit para salvar.
 *Obs: o README.md pode ser escrito em markdown, que é uma linguagem de hipertexto para documentos.
 
+***
 
    * Voltando em versões anteriores:
 
@@ -105,6 +112,8 @@ $ git reset --hard <codigo>
 ...
 
 E agora você não pede mais os arquivos modificados.
+
+***
 
    * Navegando entre as branch:
 
@@ -127,6 +136,8 @@ $ git status
 git branch
 (Ver que mudamos para essa nova branch)
 ...
+
+***
 
    * Comando diff:
 
@@ -151,6 +162,8 @@ $ git diff <nome do arquivo>
 (ver a diferença entre determinado arquivo)
 ...
 
+***
+
    * Revertendo modificações de um unico arquivo:
 
 Aprendemos como reverter commits e trazer novas modificações, mas e se você modificou varios arquivos e quer voltar apenas um arquivo em como ele estava antes do commit anterior. E então precisaremos aprender um novo comando:
@@ -163,6 +176,8 @@ $ git checkout HEAD -- <nome de arquivo>
 Agora podemos, no branch que estamos atravéz do comando HEAD, voltar, com o comando checkout, para o estado anterior.
 
    * Salvando no GitHub:
+
+***
 
 Você precisara agora salvar seus projetos no GitHub, pois ate agora, os arquivos estão salvos apenas em sua maquina local, você precisa passar isso para uma maquina remota como o GitHub. E para fazer isso você precisara fazer uma conta no GitHub, se não tiver e criar um repositório. 
 Após isso, você precisara dar um push, ou seja, enviar o repositório que esta em sua maquina para o GitHub, criando uma SSH e configurando ela no Git onde tem a opção configurações. E para fazer isso, você precisa gerar uma chave ssh e por ela passar seus arquivos para o github. Primeiro vamos gerar essa chave ssh com o seguite comando:
@@ -189,6 +204,8 @@ $ git push -u origin master
 
 Pronto! você ja tem o repositório no GitHub, basta atualisar seu GitHub que o repositório estara lá.
 
+***
+
    * Dando Push e Pull:
 
 Se você ainda não sabe, Push é basicamente que empurrar, e quando se aplica ele no termina ou manda o GitHub dar um Push, é o mesmo que dizer empurre, ou transfira os arquivos para o GitHub. Já o Pull, busca arquivos alterados do GitHub para sua maquina. E alem desses, ainda tem outro termo impotante que vale citar, o fetch, que é usado para atualizar o repositório local, para ver se não foram feita nenhuma alteração do GitHub, sim da para alterar pelo GitHub 
@@ -203,9 +220,13 @@ $ git fetch origin master
 (atualizar os arquivos local)
 ...
 
+***
+
    * Ignorando arquivos:
 
 Ignorar um arquivo no GitHub, é arquivar sem que mostre como um arquivo escondido, e para fazer isso, crie um arquivo chamado .gitignore, e nele coloque o que você quer deixar oculto, ou seja, ignorar. Escreva no arquivo que você criou, o nome dos arquivos que você quer ignorar.
+
+***
 
    * Comando git revert:
 
@@ -215,6 +236,8 @@ Esse comando tambem serve para reverter as ações, porem ele não perde as alte
 $ git revert --no-edit <codigo do commit que deu o problema>
 (faz um novo commit com a situação anterior do commit que deu o problema)
 ...
+
+***
 
    * Adicionando e Deletando branchs remotos e locais:
 
@@ -237,6 +260,8 @@ $ git branch -D teste
 (remover no repositorio local)
 ...
 
+***
+
    * Clonando Projetos:
 
 Na verdade isso é bem simple, é preciso apenas pegar a url do projeto que você que clonar e escrever:
@@ -248,6 +273,7 @@ $ git clone <link>
 
 Não é possivel dar push já que você clonou um projeto que ja pertencia a alguem, se você quiser dar push em um projeto que não é seu, é preciso fazer um fork do projerto pronto, clonar ele e ai sim dar seu push.
 
+***
 
 Dicas:
 
