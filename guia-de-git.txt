@@ -189,9 +189,44 @@ $ git push -u origin master
 
 Pronto! você ja tem o repositório no GitHub, basta atualisar seu GitHub que o repositório estara lá.
 
-	* Dando Push e Feth:
+	* Dando Push e Pull:
 
-Se você ainda não sabe, Push é basicamente que empurrar, e quando se aplica ele no termina ou manda o GitHub dar um Push, é o mesmo que dizer empurre, ou transfira os arquivos para o GitHub. Já o Feth é para atualizar o repositório local, para ver se não foram feita nenhuma alteração do GitHub, sim da para alterar pelo GitHub.
+Se você ainda não sabe, Push é basicamente que empurrar, e quando se aplica ele no termina ou manda o GitHub dar um Push, é o mesmo que dizer empurre, ou transfira os arquivos para o GitHub. Já o Pull, busca arquivos alterados do GitHub para sua maquina. E alem desses, ainda tem outro termo impotante que vale citar, o fetch, que é usado para atualizar o repositório local, para ver se não foram feita nenhuma alteração do GitHub, sim da para alterar pelo GitHub 
+Para dar esse comandos é bem simples, basta digitar:
 
+...
+$ git push origin master
+(empurrar os arquivos para o GitHub)
+$ git pull origin master
+(puxar do GitHub)
+$ git fetch origin master
+(atualizar os arquivos local)
+...
 
+	* Ignorando arquivos:
 
+Ignorar um arquivo no GitHub, é arquivar sem que mostre como um arquivo escondido, e para fazer isso, crie um arquivo chamado .gitignore, e nele coloque o que você quer deixar oculto, ou seja, ignorar. Escreva no arquivo que você criou, o nome dos arquivos que você quer ignorar.
+
+	* Comando git revert:
+
+Esse comando tambem serve para reverter as ações, porem ele não perde as alterações, pois ele deixa o commit das alterações la, e cria um novo com a situação anterior. E se você quiser pegar de novo essas alterações, ela esta salva em seus commits e você só precisa dar um reset --hard:
+
+...
+$ git revert --no-edit <codigo do commit que deu o problema>
+(faz um novo commit com a situação anterior do commit que deu o problema)
+...
+
+	* Deletando branchs remotos:
+
+Para enviar seus branchs para o seu repositório remoto, é só substituir o push de branch master para <nome do branch>, mas se você quer deletar esse branch que você ja criou, escreva: 
+
+...
+$ git branch
+(consutar o branch)
+$ git checkout <nome do branch>
+(muda o branch)
+$ git push origin <nome do branch>
+(envia o branch)
+$ git branch
+(consutar o branch)
+...
