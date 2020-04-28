@@ -1,5 +1,6 @@
-## Guia de ferramenta de versionamento Git
-
+# Guia de ferramenta de versionamento Git
+</br>
+</br>
 
   Neste documento falará um pouco da ferramenta de versionamento git, e mostrara os comandos basicos que se precisa dominar para poder utilizar o git. Se você não sabe nada sobre o git acesse o site: (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control), pois nele você verá uma breve história do git, o que é essa ferramenta, porque ela é importante, e assim, só lendo o primeiro capitulo estará pronto para saber seus principais comandos.
 
@@ -9,7 +10,8 @@
 
 * Fazendo algumas configurações e criando um repositório:
 
-  Você precisara fazer algumas configurações em seu git apos instalar em sua maquina, e para começar os seus projetos, você precisara de uma pasta para guardar seus projetos. Este guia estara sempre mostrando comandos no terminal para o Linux, se quisar usar outro sistema terá que dar uma pesquisada mais aí.
+
+Você precisara fazer algumas configurações em seu git apos instalar em sua maquina, e para começar os seus projetos, você precisara de uma pasta para guardar seus projetos. Este guia estara sempre mostrando comandos no terminal para o Linux, se quisar usar outro sistema terá que dar uma pesquisada mais aí.
 
 ```sh
 $ git config --global user.name "seu nome"
@@ -37,8 +39,7 @@ clear
 
 ***
 
-   * Criando nossos arquivos: 
-
+   * Criando nossos arquivos
   Agora vamos criar nossos arquivos, todo repositório tem como padão, criar um README.md e um LICENSE. No README.md, você descreve seu projeto, colocando para que ele serve, e algumas informações adicionais, e o LICENSE, para escrever qual sua licença quado for jogar isso em uma máquina remota como o github, e provavelmente você ira escoher a licensa MIT.
 
 ```sh
