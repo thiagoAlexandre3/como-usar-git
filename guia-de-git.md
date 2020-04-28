@@ -1,15 +1,13 @@
 ### Guia de ferramenta de versionamento Git
 
 
-* Introdução:
-
-Neste documento falará um pouco da ferramenta de versionamento git, e mostrara os comandos basicos que se precisa dominar para poder utilizar o git. Se você não sabe nada sobre o git acesse o site: (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control), pois nele você verá uma breve história do git, o que é essa ferramenta, porque ela é importante, e assim, só lendo o primeiro capitulo estará pronto para saber seus principais comandos.
+  Neste documento falará um pouco da ferramenta de versionamento git, e mostrara os comandos basicos que se precisa dominar para poder utilizar o git. Se você não sabe nada sobre o git acesse o site: (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control), pois nele você verá uma breve história do git, o que é essa ferramenta, porque ela é importante, e assim, só lendo o primeiro capitulo estará pronto para saber seus principais comandos.
 
 
 Agora que você, se não sabia, já sabe o que é o git, está pronto para continuar e ver os prinipais comandos que se deve saber sobre o git, que irão facilitar a sua vida, seja você um simples úsuario afim de tal ferramenta, ou até mesmo um programador junior ou experiente.
 
 
-   * Fazendo algumas configurações e criando um repositório:
+* Fazendo algumas configurações e criando um repositório:
 
 Você precisara fazer algumas configurações em seu git apos instalar em sua maquina, e para começar os seus projetos, você precisara de uma pasta para guardar seus projetos. Este guia estara sempre mostrando comandos no terminal para o Linux, se quisar usar outro sistema terá que dar uma pesquisada mais aí.
 
@@ -27,8 +25,6 @@ $ git init <nome do repositorio criado>
 md <nome do diretorio>
 (aqui nos entramos no diretorio que você ira salvar seus arquivos)
 ```
-
-* Desenvolvimento:
 
 
 Pronto! Agora você tem o git configurado com seu nome, email, editor e em sua pasta, assim poderá começar seus projetos, para ver suas configuração digite o comando:
