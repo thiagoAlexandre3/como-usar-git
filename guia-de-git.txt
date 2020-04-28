@@ -1,13 +1,15 @@
-		**Guia de ferramenta de versionamento Git**
+		### Guia de ferramenta de versionamento Git
 
 
 * Introdução:
 
 Neste documento falará um pouco da ferramenta de versionamento git, e mostrara os comandos basicos que se precisa dominar para poder utilizar o git. Se você não sabe nada sobre o git acesse o site: (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control), pois nele você verá uma breve história do git, o que é essa ferramenta, porque ela é importante, e assim, só lendo o primeiro capitulo estará pronto para saber seus principais comandos.
 
+
 * Desenvolvimento:
 
 Agora que você, se não sabia, já sabe o que é o git, está pronto para continuar e ver os prinipais comandos que se deve saber sobre o git, que irão facilitar a sua vida, seja você um simples úsuario afim de tal ferramenta, ou até mesmo um programador junior ou experiente.
+
 
    * Fazendo algumas configurações e criando um repositório:
 
@@ -27,6 +29,7 @@ $ git init <nome do repositorio criado>
 md <nome do diretorio>
 (aqui nos entramos no diretorio que você ira salvar seus arquivos)
 ...
+
 
 Pronto! Agora você tem o git configurado com seu nome, email, editor e em sua pasta, assim poderá começar seus projetos, para ver suas configuração digite o comando:
 
@@ -52,6 +55,7 @@ $ git add LICENSE
 (até agora o repositório estava apenas em seu diretório, agora você o adicionou ao git)
 ...
 
+
 Pronto! agora você tem os dois arquivos padrão e agora adicione os arquivos que você quiser como seu projeto, seu site, ou somente seus lembretes mesmo se quiser.
 
 ***
@@ -68,6 +72,7 @@ $ git status
 $ git log
 (ver seus commits)
 ...
+
 
 Você pode adicionar os arquivos no git e na mesma linha já criar um commit com o comando ... $ git commit -am "Primeiro commit", e esse a atrás do m vem de adicionar e o m de minimizar, ou seja, um commit simples com descrição.
 
@@ -94,6 +99,7 @@ $ echo "Alterando arquivo" >> README.md
 $ git commit -m "Adicionando linha em README.md"
 ...
 
+
 Pronto! Agora você pode adicionar, renomear e modificar os seus arquivos e após isso é só gerar um commit para salvar.
 *Obs: o README.md pode ser escrito em markdown, que é uma linguagem de hipertexto para documentos.
 
@@ -110,6 +116,7 @@ $ git log
 $ git reset --hard <codigo>
 (volta no commit que selecionou)
 ...
+
 
 E agora você não pede mais os arquivos modificados.
 
@@ -148,12 +155,14 @@ $ git diff
 (Tirar a diferença)
 ...
 
+
 Agora você pode ver tudo que foi modificado e fazer seu commit. É possivel tambem com o comando diff ver só quais arquivos foram modificados:
 
 ...
 $ git diff --name-only
 (Ver os arquivos modificados)
 ...
+
 
 Tambem é possivel dirar a diff de apenas um arquivo em especifico, como por exemplo:
 
@@ -173,6 +182,7 @@ $ git checkout HEAD -- <nome de arquivo>
 (trazendo as configurações anteriores)
 ...
 
+
 Agora podemos, no branch que estamos atravéz do comando HEAD, voltar, com o comando checkout, para o estado anterior.
 
    * Salvando no GitHub:
@@ -190,6 +200,7 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 (depois informe sua senha e depois confirme ela novamente)
 ...
 
+
 Agora precisamos passar essa chave para o GitHub e transferir os arquivos. Entre no local onde ele baixou a chave, copie essa chave (não o arquivo, o conteúdo dele), acesse seu GitHub clicle em seu avatar do canto superior direito e clica em setings. Após isso clice em ssh and gpq keys, crie uma nova ssh e cole a chave na opção informada, e escreva um titulo, que lembre seu pc por exemplo <seu usuário> home.
 
 Pronto! você agora tem uma chave ssh, vamos passar os arquivos através dessa chave. Escreva em seu terminal:
@@ -201,6 +212,7 @@ $ git remote add origin https://<o endereço de seu repositorio do github>.git
 $ git push -u origin master
 (da um push do branch master para o repositório origin)
 ...
+
 
 Pronto! você ja tem o repositório no GitHub, basta atualisar seu GitHub que o repositório estara lá.
 
