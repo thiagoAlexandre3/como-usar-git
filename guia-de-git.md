@@ -1,4 +1,4 @@
-# Guia de ferramenta de versionamento Git
+# Guia de ferramenta de versionamento Git.
 </br>
 </br>
 
@@ -287,3 +287,4 @@ $ git clone <link>
 Dicas Finais:
 
 1. Se você quer excluir um arquivo ou renomear do repositorio remoto, pode fazer isso de seu terminal digitando o comando git remote, e após a ação que quer fazer, seja ela remover ou renomear.
+2. Navegar entre suas branch é muito importante pois com isso, você pode recuperar seus arquivos fazendo testes em outras branch 
