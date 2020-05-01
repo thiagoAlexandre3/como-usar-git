@@ -42,7 +42,7 @@ Pronto! agora você tem os dois arquivos padrão e agora adicione os arquivos qu
 
     Primeiro commit:
 
-Agora vamos salvar esses arquivos em seu git, pois até agora você criou dois arquivos e os adicionou ao git, porem para salvar esses arquivos no git é necessário dar o commit, que salva as alterações, se você quiser ver o status de seu git digite ... git status ... e agora você vê que tem arquivos não salvos e para salva-los vamos fazer nosso commit.
+Agora vamos salvar esses arquivos em seu git, pois até agora você criou dois arquivos e os adicionou ao git, porem para salvar esses arquivos no git é necessário dar o commit, que salva as alterações, se você quiser ver o status de seu git digite git status e agora você vê que tem arquivos não salvos e para salva-los vamos fazer nosso commit.
 
 $ git commit -m "Primeiro commit"
 (fazendo commit)
@@ -51,7 +51,7 @@ $ git status
 $ git log
 (ver seus commits)
 
-Você pode adicionar os arquivos no git e na mesma linha já criar um commit com o comando ... $ git commit -am "Primeiro commit", e esse a atrás do m vem de adicionar e o m de minimizar, ou seja, um commit simples com descrição.
+Você pode adicionar os arquivos no git e na mesma linha já criar um commit com o comando $ git commit -am "Primeiro commit", e esse a atrás do m vem de adicionar e o m de minimizar, ou seja, um commit simples com descrição.
 
     Modificando arquivos:
 
@@ -75,7 +75,7 @@ Pronto! Agora você pode adicionar, renomear e modificar os seus arquivos e apó
 
     Voltando em versões anteriores:
 
-Se você fez uma modificação em um determinado arquivo e agora percebeu que acabou dando problema e precisa da versão anterior, o git tambem faz isso para você. Cada commit tem um codigo, e precisaremos deste código para poder voltar. Você pode consutar ele com o comando ... $ git log ... E agora se juntarmos esse código ao comando abaixo, poderemos então restaurar o projeto antes do commit, ou em qual commit você quiser.
+Se você fez uma modificação em um determinado arquivo e agora percebeu que acabou dando problema e precisa da versão anterior, o git tambem faz isso para você. Cada commit tem um codigo, e precisaremos deste código para poder voltar. Você pode consutar ele com o comando $ git log E agora se juntarmos esse código ao comando abaixo, poderemos então restaurar o projeto antes do commit, ou em qual commit você quiser.
 
 $ git log
 (consutar o código)
@@ -108,7 +108,7 @@ git branch
 
 Quando estamos trabalhando com dois arquivos é possivel tirar a diferença entre eles, ou seja, o Path entre eles, e o comando diff faz exatamente isso, tira o Path dos arquivos.
 
-... $ git diff (Tirar a diferença) ...
+$ git diff (Tirar a diferença)
 
 Agora você pode ver tudo que foi modificado e fazer seu commit. É possivel tambem com o comando diff ver só quais arquivos foram modificados:
 
