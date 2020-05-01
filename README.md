@@ -18,6 +18,8 @@ _**Para isso, veremos :point_down:**_
 
 :point_right: E por fim, aplicar tudo no GitHub;
 
+***
+
 #### Se gostou do projeto, siga me em: @thiagoAlexandre3, para acompanhar meus projetos e dar uma força neles se achar nescessário.
 
 Obrigada pela ajuda, :slightly_smiling_face:
