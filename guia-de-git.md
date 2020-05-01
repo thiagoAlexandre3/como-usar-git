@@ -1,5 +1,4 @@
-# Guia de ferramenta de versionamento Git.
-</br>
+# Guia da ferramenta de versionamento, Git, e do GitHub.
 </br>
 
   Neste documento falará um pouco da ferramenta de versionamento git, e mostrara os comandos basicos que se precisa dominar para poder utilizar o git. Se você não sabe nada sobre o git acesse o site: (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control), pois nele você verá uma breve história do git, o que é essa ferramenta, porque ela é importante, e assim, só lendo o primeiro capitulo estará pronto para saber seus principais comandos.
@@ -59,7 +58,7 @@ $ git add LICENSE
 
    * Primeiro commit:
 
-  Agora vamos salvar esses arquivos em seu git, pois até agora você criou dois arquivos e os adicionou ao git, porem para salvar esses arquivos no git é necessário dar o commit, que salva as alterações, se você quiser ver o status de seu git digite ... git status ... e agora você vê que tem arquivos não salvos e para salva-los vamos fazer nosso commit.
+  Agora vamos salvar esses arquivos em seu git, pois até agora você criou dois arquivos e os adicionou ao git, porem para salvar esses arquivos no git é necessário dar o commit, que salva as alterações, se você quiser ver o status de seu git digite `git status`, e agora você vê que tem arquivos não salvos e para salva-los vamos fazer nosso commit.
 
 ```sh
 $ git commit -m "Primeiro commit"
@@ -71,7 +70,7 @@ $ git log
 ```
 
 
-  Você pode adicionar os arquivos no git e na mesma linha já criar um commit com o comando ... $ git commit -am "Primeiro commit", e esse a atrás do m vem de adicionar e o m de minimizar, ou seja, um commit simples com descrição.
+  Você pode adicionar os arquivos no git e na mesma linha já criar um commit com o comando `$ git commit -am "Primeiro commit"`. Esse - a atrás do - m vem de adicionar e o - m de minimizar, ou seja, um commit simples com descrição.
 
 ***
 
@@ -104,7 +103,7 @@ $ git commit -m "Adicionando linha em README.md"
 
    * Voltando em versões anteriores:
 
-  Se você fez uma modificação em um determinado arquivo e agora percebeu que acabou dando problema e precisa da versão anterior, o git tambem faz isso para você. Cada commit tem um codigo, e precisaremos deste código para poder voltar. Você pode consutar ele com o comando ... $ git log ...
+  Se você fez uma modificação em um determinado arquivo e agora percebeu que acabou dando problema e precisa da versão anterior, o git tambem faz isso para você. Cada commit tem um codigo, e precisaremos deste código para poder voltar. Você pode consutar ele com o comando `$ git log`.
   E agora se juntarmos esse código ao comando abaixo, poderemos então restaurar o projeto antes do commit, ou em qual commit você quiser.
 
 ```sh
@@ -147,10 +146,10 @@ git branch
 
   Quando estamos trabalhando com dois arquivos é possivel tirar a diferença entre eles, ou seja, o Path entre eles, e o comando diff faz exatamente isso, tira o Path dos arquivos.
 
-...
+```
 $ git diff
 (Tirar a diferença)
-...
+``` 
 
 
   Agora você pode ver tudo que foi modificado e fazer seu commit. É possivel tambem com o comando diff ver só quais arquivos foram modificados:
