@@ -22,4 +22,4 @@ _**Para isso, veremos :point_down:**_
 
 #### Se gostou do projeto, siga me em: @thiagoAlexandre3, para acompanhar meus projetos e dar uma força neles se achar nescessário.
 
-Obrigada pela ajuda, :slightly_smiling_face:
+Obrigada pela força, :slightly_smiling_face:
