@@ -16,6 +16,10 @@ _**Para isso, veremos :point_down:**_
 
 :point_right: Reverter alterações;
 
+:point_right: Navegar entre branchs;
+
+:point_right: Varios outros comandos adicionais;
+
 :point_right: E por fim, aplicar tudo no GitHub;
 
 ***
