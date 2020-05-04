@@ -57,8 +57,10 @@ clear
 
 ***
 
-   * Criando nossos arquivos
-  Agora vamos criar nossos arquivos, todo repositório tem como padrão, criar um README.md e um LICENSE. No README.md, você descreve seu projeto, colocando para que ele serve, e algumas informações adicionais, e o LICENSE, para escrever qual sua licença quado for jogar isso em uma máquina remota como o github, e provavelmente você ira escolher a licença MIT.
+   * Criando nossos arquivos:
+
+
+Agora vamos criar nossos arquivos, todo repositório tem como padrão, criar um README.md e um LICENSE. No README.md, você descreve seu projeto, colocando para que ele serve, e algumas informações adicionais, e o LICENSE, para escrever qual sua licença quado for jogar isso em uma máquina remota como o github, e provavelmente você ira escolher a licença MIT.
 
 ```sh
 $ touch README.md
