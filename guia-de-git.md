@@ -1,32 +1,48 @@
 ### como-usar-git
-# Guia da ferramenta de versionamento, Git, e do GitHub.
+<h1 align="center">
+	Guia da ferramenta de versionamento, Git e GitHub.
+</h1>
 </br>
-	
-_**Você não sabe o que é Git ou GitHub, ou queria ver melhor o que é, ou ainda, está interessado aprender alguns comandos para aplicar em seus projetos utilizando o Git?**_
-</br>
-_**Então siga esse documento e terá essas, e mais informações sobre como trabalhar com essa incrível ferramenta!**_
+
+<p>
+	<b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Você não sabe o que é Git ou GitHub, ou queria ver melhor o que é, ou ainda, está interessado aprender alguns comandos para aplicar em seus projetos utilizando o Git? </b>
+</p>
+<p>
+	<b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Então siga esse documento e terá essas, e mais informações sobre como trabalhar com essa incrível ferramenta!</b>
+</p>
 
 </br>
 </br>
 
-* História do Git e do GitHub:
+<ul type="square">
+	<li>História do Git e do GitHub:</li>
 
+<p>
   As ferramentas de versionamento evoluirão muito com o tempo, tanto que só lendo o resumo deste documento, já da para perceber quantas funcionalidade se tem hoje em dia no Git e no GitHub. Vamos viajar no tempo para entender como o Git surgiu e evoluiu tanto até a chegada do GitHub.
+ </p>
+ <p> 
 	Estamos agora em nos anos 1985, quando o Git ainda não existia, mas o software mais usado para versionamento é o CVS, Software de Controle de Versão, que precisava de um servidor, ou seja é um software centralizado, e que até atendia muitos dos problemas, mas também daixa muito deseja. Uma vez que você carregasse seu arquivos para o servidor, não é mais possível renomeá-los, mudar o diretório, entre outras funcionalidade. Caminhando um pouco mais, nesta nossa linha do tempo da evolução do Git, chegamos em 2000, onde um dos softwares, agora, mais utilizado, é o Subversion, que se semelhante bastante ao CVS, é Open Source, código aberto, Centralizado, necessita de um servidor, e esta tentando resolver os problemas que se tem no CVS. Ainda no ano 2000, temos também, o software BitKeeper, que diferente dos dois ditos anteriormente, é um software distribuído, um software livre, com versão comunidade, porem é proprietário, o que daqui uns meses será um grande problema, pois o Kernel do Linux, esta sendo desenvolvido, com a utilização dessa ferramenta. Então pense comigo, um Sistema Operacional totalmente livre, estar sendo desenvolvido com uma ferramenta proprietária, vamos concordar que pode dar um grande problema mais a frente não é? E foi exatamente isso que um dos defensores dos softwares livres, Richard Stallman, pensou e não concordou. Isso foi uns dos motivos para a criação do Git. Mas o principal motivo, aconteceu quando o BitKeeper, por conta de um problema com um programador usuário da ferramenta, lançou uma nova licença do Software, licença, essa que continha muitas limitações aos que utilizavam da versão comunidade. E assim, como o Linus Torvalds (o principal desenvolvedor do Linux, o que desenvolveu o nucleo do sistema operativo) utilizava essa versão, não gostou nada disso, e resolveu fazer seu próprio software de versionamento, o Git, que é de software livre, distribuído, complexo, porem mais performativo e Open Source. Então como podemos ver, o Git, foi um software criado por meio de uma ‘briga’ de desenvolvedores, que agora é a melhor ferramenta de controle de versão, feita em apenas 4 dias. É isso mesmo, porem lançado apenas em 7 de abril de 2005.
+ </p>
+ <p> 	
 	Após o lançamento do Git e ele ter feito muito sucesso, um grupo de quatro desenvolvedores (Tom Preston Werner, Chris Wanstrath, P. J. Hyett e Scott Chacon), criaram o GitHub uma plataforma de hospedagem de código, bem semelhante ao SourceForge, porem se tornou mais popular em 2011 e mais utilizado. É um software baseado no Git, e proprietário. Atualmente ele pertence a Microsoft, ela comprou o GitHub em 2018, por conta da desmotivação dos fundadores do software por um ataque de DDOS, que acabou quebrando a plataforma. Então com esse ataque, eles acabaram vendendo o Software para Microsoft por 7.5 bilhões de dólares. Curiosidade, esse ataque parou a internet de todo o mundo, e foi registrado como o maior ataque de DDoS de todos os tempos. Um ataque DDoS  é uma tentativa de tornar os re	cursos de um sistema indisponíveis para os seus utilizadores, uma invalidação por sobrecarga, que pode forçar o sistema vítima a reinicializar ou consumir todos os recursos de forma que ele não possa mais fornecer seu serviço ou obstrui a mídia de comunicação entre os utilizadores e o sistema vítima de forma a não se comunicarem adequadamente.
-</br>
-</br>
- 
-* O que é Git e GitHub e para que serve?
+</p>	
+<hr/>
+<li>O que é Git e GitHub e para que serve?</li>
 
+<p>	
   Depois de ler toda a história da evolução do Git, você já deve ter uma noção do que faz essa ferramenta. O Git, como já dito, é uma software de controle de versões. Onde após instalado e configurado, e iniciá-lo em um determinado repositório, ele controla todas modificações que as arquivos desse repositório ira passa, e guarda um histórico com essas modificações, desde que cada vez que você modifique os arquivos, você faça um commit. Um Commit, é o ponto de transição que se tem onde os arquivos estão salvos em seu repositório local, e o histórico desses commits, no git. E o que se tem antes do commit anterior e esse, é a diferença desse arquivo, a diff desse arquivo. Então com o Git, podemos guardar as versão que nosso projeto passou até chegar onde ele está, navegar entre essas versões até voltar em uma versão existente, ver a diferença dos arquivos para ver o que foi modificado, podemos também criar paralelos do projeto, e muitas outros funcionalidade que veremos ao decorrer desse documento, acompanhe.
+</p>	
+<hr/>
+<li>Iniciando aos primeiros comandos:</li>
 
-* Os comandos de manipulação do Git:
+<ul type="circle">
+	<li>Os comandos de manipulação do Git:</li>
 
   Agora que você, se não sabia, já sabe o que é o git, está pronto para continuar e ver os principais comandos que se deve saber sobre o git, que irão facilitar a sua vida, seja você um simples usuário afim de tal ferramenta, ou até mesmo um programador júnior ou experiente.
+	
 
-
-* Iniciando com o Git:
+***
+<li>Iniciando com o Git:</li>
 
 
 Você precisara fazer algumas configurações em seu git apos instalar em sua maquina, e para começar os seus projetos, você precisara de uma pasta para guardar seus projetos. Este guia estará sempre mostrando comandos no terminal para o Linux, se quiser usar outro sistema terá que dar uma pesquisada mais aí.
@@ -57,7 +73,7 @@ clear
 
 ***
 
-   * Criando nossos arquivos:
+   <li>Criando nossos arquivos:</li>
 
 
 Agora vamos criar nossos arquivos, todo repositório tem como padrão, criar um README.md e um LICENSE. No README.md, você descreve seu projeto, colocando para que ele serve, e algumas informações adicionais, e o LICENSE, para escrever qual sua licença quado for jogar isso em uma máquina remota como o github, e provavelmente você ira escolher a licença MIT.
@@ -77,7 +93,7 @@ $ git add LICENSE
 
 ***
 
-   * Primeiro commit:
+   <li>Primeiro commit:</li>
 
   Agora vamos salvar esses arquivos em seu git, pois até agora você criou dois arquivos e os adicionou ao git, porem para salvar esses arquivos no git é necessário dar o commit, que salva as alterações, se você quiser ver o status de seu git digite `git status`, e agora você vê que tem arquivos não salvos e para salvá-los vamos fazer nosso commit.
 
@@ -95,7 +111,7 @@ $ git log
 
 ***
 
-   * Modificando arquivos:
+   <li>Modificando arquivos:</li>
 
   Se você quiser adicionar um arquivos, ou modificá-los, tera que fazer um novo commit, para que ele carregue essas modificações para o git.
   E você pode modificar, abrindo seu editor, ou por comando mesmo, vamos supor que você queira acrescentar algo em seu README.md, pois por enquanto você só adicionou ele mais não colocou nada:
@@ -122,7 +138,7 @@ $ git commit -m "Adicionando linha em README.md"
 
 ***
 
-   * Voltando em versões anteriores:
+   <li>Voltando em versões anteriores:</li>
 
   Se você fez uma modificação em um determinado arquivo e agora percebeu que acabou dando problema e precisa da versão anterior, o git também faz isso para você. Cada commit tem um código, e precisaremos deste código para poder voltar. Você pode consultar ele com o comando `$ git log`.
   E agora se juntarmos esse código ao comando abaixo, poderemos então restaurar o projeto antes do commit, ou em qual commit você quiser.
@@ -139,7 +155,7 @@ $ git reset --hard <codigo>
 
 ***
 
-   * Navegando entre as branch:
+   <li>Navegando entre as branch:</li>
 
   As branch, podem serem entendidas como versões do seu projeto, de padrão se inicia com a branch master, onde você adiciona, renomeia e modifica seus arquivos. Mas você pode sambem ter uma branch teste e após comitar em seu projeto e ver que pode adicionar ou testar um recurso, você pode adicionar uma nova versão como a teste e modificar testar e fazer o que quiser nela que na branch master estará intacta. Vamos fazer alguns testes para entender melhor esse recurso.
 
@@ -163,7 +179,7 @@ git branch
 
 ***
 
-   * Comando diff:
+   <li>Comando diff:</li>
 
   Quando estamos trabalhando com dois arquivos é possível tirar a diferença entre eles, ou seja, o Path entre eles, e o comando diff faz exatamente isso, tira o Path dos arquivos.
 
@@ -190,7 +206,7 @@ $ git diff <nome do arquivo>
 
 ***
 
-   * Revertendo modificações de um único arquivo:
+   <li>Revertendo modificações de um único arquivo:</li>
 
   Aprendemos como reverter commits e trazer novas modificações, mas e se você modificou vários arquivos e quer voltar apenas um arquivo em como ele estava antes do commit anterior. E então precisaremos aprender um novo comando:
 
@@ -202,7 +218,7 @@ $ git checkout HEAD -- <nome de arquivo>
 
   Agora podemos, no branch que estamos através do comando HEAD, voltar, com o comando checkout, para o estado anterior.
 
-   * Salvando no GitHub:
+   <li>Salvando no GitHub:</li>
 
 ***
 
@@ -235,7 +251,7 @@ $ git push -u origin master
 
 ***
 
-   * Dando Push e Pull:
+   <li>Dando Push e Pull:</li>
 
   Se você ainda não sabe, Push é basicamente que empurrar, e quando se aplica ele no termina ou manda o GitHub dar um Push, é o mesmo que dizer empurre, ou transfira os arquivos para o GitHub. Já o Pull, busca arquivos alterados do GitHub para sua maquina. E além desses, ainda tem outro termo importante que vale citar, o fetch, que é usado para atualizar o repositório local, para ver se não foram feita nenhuma alteração do GitHub, sim da para alterar pelo GitHub 
   Para dar esse comandos é bem simples, basta digitar:
@@ -251,13 +267,13 @@ $ git fetch origin master
 
 ***
 
-   * Ignorando arquivos:
+   <li>Ignorando arquivos:</li>
 
   Ignorar um arquivo no GitHub, é arquivar sem que mostre como um arquivo escondido, e para fazer isso, crie um arquivo chamado .gitignore, e nele coloque o que você quer deixar oculto, ou seja, ignorar. Escreva no arquivo que você criou, o nome dos arquivos que você quer ignorar.
 
 ***
 
-   * Comando git revert:
+   <li>Comando git revert:</li>
 
   Esse comando tambem serve para reverter as ações, porem ele não perde as alterações, pois ele deixa o commit das alterações la, e cria um novo com a situação anterior. E se você quiser pegar de novo essas alterações, ela esta salva em seus commits e você só precisa dar um reset --hard:
 
@@ -268,7 +284,7 @@ $ git revert --no-edit <codigo do commit que deu o problema>
 
 ***
 
-   * Adicionando e Deletando branchs remotos e locais:
+   <li>Adicionando e Deletando branchs remotos e locais:</li>
 
   Para enviar seus branchs para o seu repositório remoto, é só substituir o push de branch master para <nome do branch>, mas se você quer deletar esse branch que você já criou, escreva: 
 
@@ -291,7 +307,7 @@ $ git branch -D teste
 
 ***
 
-   * Clonando Projetos:
+   <li>Clonando Projetos:</li>
 
   Na verdade isso é bem simples, é preciso apenas pegar a url do projeto que você que clonar e escrever:
 
