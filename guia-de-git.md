@@ -325,8 +325,10 @@
 		Não é possível dar push já que você clonou um projeto que já pertencia a alguém, se você quiser dar push em um projeto que não é seu, é preciso fazer um fork do projeto pronto, clonar ele e ai sim dar seu push.
 	</p>	
 	<hr/>
-
-Dicas Finais:
-
-1. Se você quer excluir um arquivo ou renomear do repositório remoto, pode fazer isso de seu terminal digitando o comando git remote, e após a ação que quer fazer, seja ela remover ou renomear.
-2. Navegar entre suas branch é muito importante pois com isso, você pode recuperar seus arquivos fazendo testes em outras branch 
+	<li>Dicas Finais:</li>
+	<p>
+		1. Se você quer excluir um arquivo ou renomear do repositório remoto, pode fazer isso de seu terminal digitando o comando git remote, e após a ação que quer fazer, seja ela remover ou renomear.
+	</p>
+	<p>
+		2. Navegar entre suas branch é muito importante pois com isso, você pode recuperar seus arquivos fazendo testes em outras branch.
+	</p>
