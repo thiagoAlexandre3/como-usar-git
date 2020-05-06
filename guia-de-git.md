@@ -3,20 +3,16 @@
 	Guia da ferramenta de versionamento, Git e GitHub.
 </h1>
 </br>
-
 <p>
 	<b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Você não sabe o que é Git ou GitHub, ou queria ver melhor o que é, ou ainda, está interessado aprender alguns comandos para aplicar em seus projetos utilizando o Git? </b>
 </p>
 <p>
 	<b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Então siga esse documento e terá essas, e mais informações sobre como trabalhar com essa incrível ferramenta!</b>
 </p>
-
 </br>
 </br>
-
 <ul type="square">
 	<li>História do Git e do GitHub:</li>
-
 <p>
   As ferramentas de versionamento evoluirão muito com o tempo, tanto que só lendo o resumo deste documento, já da para perceber quantas funcionalidade se tem hoje em dia no Git e no GitHub. Vamos viajar no tempo para entender como o Git surgiu e evoluiu tanto até a chegada do GitHub.
  </p>
@@ -28,22 +24,18 @@
 </p>	
 <hr/>
 <li>O que é Git e GitHub e para que serve?</li>
-
 <p>	
   Depois de ler toda a história da evolução do Git, você já deve ter uma noção do que faz essa ferramenta. O Git, como já dito, é uma software de controle de versões. Onde após instalado e configurado, e iniciá-lo em um determinado repositório, ele controla todas modificações que as arquivos desse repositório ira passa, e guarda um histórico com essas modificações, desde que cada vez que você modifique os arquivos, você faça um commit. Um Commit, é o ponto de transição que se tem onde os arquivos estão salvos em seu repositório local, e o histórico desses commits, no git. E o que se tem antes do commit anterior e esse, é a diferença desse arquivo, a diff desse arquivo. Então com o Git, podemos guardar as versão que nosso projeto passou até chegar onde ele está, navegar entre essas versões até voltar em uma versão existente, ver a diferença dos arquivos para ver o que foi modificado, podemos também criar paralelos do projeto, e muitas outros funcionalidade que veremos ao decorrer desse documento, acompanhe.
 </p>	
 <hr/>
 <li>Iniciando aos primeiros comandos:</li>
-
 <ul type="circle">
 	<li>Os comandos de manipulação do Git:</li>
 
   Agora que você, se não sabia, já sabe o que é o git, está pronto para continuar e ver os principais comandos que se deve saber sobre o git, que irão facilitar a sua vida, seja você um simples usuário afim de tal ferramenta, ou até mesmo um programador júnior ou experiente.
 	
-
 ***
 <li>Iniciando com o Git:</li>
-
 
 Você precisara fazer algumas configurações em seu git apos instalar em sua maquina, e para começar os seus projetos, você precisara de uma pasta para guardar seus projetos. Este guia estará sempre mostrando comandos no terminal para o Linux, se quiser usar outro sistema terá que dar uma pesquisada mais aí.
 
@@ -74,7 +66,6 @@ clear
 ***
 
    <li>Criando nossos arquivos:</li>
-
 
 Agora vamos criar nossos arquivos, todo repositório tem como padrão, criar um README.md e um LICENSE. No README.md, você descreve seu projeto, colocando para que ele serve, e algumas informações adicionais, e o LICENSE, para escrever qual sua licença quado for jogar isso em uma máquina remota como o github, e provavelmente você ira escolher a licença MIT.
 
@@ -218,9 +209,9 @@ $ git checkout HEAD -- <nome de arquivo>
 
   Agora podemos, no branch que estamos através do comando HEAD, voltar, com o comando checkout, para o estado anterior.
 
-   <li>Salvando no GitHub:</li>
-
 ***
+
+   <li>Salvando no GitHub:</li>
 
   Você precisara agora salvar seus projetos no GitHub, pois ate agora, os arquivos estão salvos apenas em sua maquina local, você precisa passar isso para uma maquina remota como o GitHub. E para fazer isso você precisara fazer uma conta no GitHub, se não tiver e criar um repositório. 
   Após isso, você precisara dar um push, ou seja, enviar o repositório que esta em sua maquina para o GitHub, criando uma SSH e configurando ela no Git onde tem a opção configurações. E para fazer isso, você precisa gerar uma chave ssh e por ela passar seus arquivos para o github. Primeiro vamos gerar essa chave ssh com o seguite comando:
