@@ -24,6 +24,6 @@ _**Para isso, veremos :point_down:**_
 
 ***
 
-#### Se gostou do projeto, siga me em: @thiagoAlexandre3, para acompanhar meus projetos e dar uma força neles se achar nescessário.
+#### Se gostou do projeto, siga me em: @thiagoAlexandre3, para acompanhar meus projetos e me ajudar a melhorá-los se achar nescessário.
 
 Obrigada pela força, :slightly_smiling_face:
