@@ -13,6 +13,7 @@
 </br>
 <ul type="square">
 	<li>História do Git e do GitHub:</li>
+	</br>
 	<p>
 		As ferramentas de versionamento evoluirão muito com o tempo, tanto que só lendo o resumo deste documento, já da para perceber quantas funcionalidade se tem hoje em dia no Git e no GitHub. Vamos viajar no tempo para entender como o Git surgiu e evoluiu tanto até a chegada do GitHub.
 	</p>
@@ -24,18 +25,22 @@
 	</p>	
 	<hr/>
 	<li>O que é Git e GitHub e para que serve?</li>
+	</br>
 	<p>	
 		Depois de ler toda a história da evolução do Git, você já deve ter uma noção do que faz essa ferramenta. O Git, como já dito, é uma software de controle de versões. Onde após instalado e configurado, e iniciá-lo em um determinado repositório, ele controla todas modificações que as arquivos desse repositório ira passa, e guarda um histórico com essas modificações, desde que cada vez que você modifique os arquivos, você faça um commit. Um Commit, é o ponto de transição que se tem onde os arquivos estão salvos em seu repositório local, e o histórico desses commits, no git. E o que se tem antes do commit anterior e esse, é a diferença desse arquivo, a diff desse arquivo. Então com o Git, podemos guardar as versão que nosso projeto passou até chegar onde ele está, navegar entre essas versões até voltar em uma versão existente, ver a diferença dos arquivos para ver o que foi modificado, podemos também criar paralelos do projeto, e muitas outros funcionalidade que veremos ao decorrer desse documento, acompanhe.
 	</p>	
 	<hr/>
 	<li>Iniciando aos primeiros comandos:</li>
+	</br>
 	<ul type="circle">
 	<li>Os comandos de manipulação do Git:</li>
+	</br>
 	<p>
 		Agora que você, se não sabia, já sabe o que é o git, está pronto para continuar e ver os principais comandos que se deve saber sobre o git, que irão facilitar a sua vida, seja você um simples usuário afim de tal ferramenta, ou até mesmo um programador júnior ou experiente.
 	</p>	
 	<hr/>	
 	<li>Iniciando com o Git:</li>
+	</br>
 	<p>
 		Você precisara fazer algumas configurações em seu git apos instalar em sua maquina, e para começar os seus projetos, você precisara de uma pasta para guardar seus projetos. Este guia estará sempre mostrando comandos no terminal para o Linux, se quiser usar outro sistema terá que dar uma pesquisada mais aí.
 	</p>
@@ -67,6 +72,7 @@
 	</code>	
 	<hr/>
 	<li>Criando nossos arquivos:</li>
+	</br>
 	<p>
 		Agora vamos criar nossos arquivos, todo repositório tem como padrão, criar um README.md e um LICENSE. No README.md, você descreve seu projeto, colocando para que ele serve, e algumas informações adicionais, e o LICENSE, para escrever qual sua licença quado for jogar isso em uma máquina remota como o github, e provavelmente você ira escolher a licença MIT.
 	</p>
@@ -86,6 +92,7 @@
 	</p>	
 	<hr/>
 	<li>Primeiro commit:</li>
+	</br>
 	<p>
 		Agora vamos salvar esses arquivos em seu git, pois até agora você criou dois arquivos e os adicionou ao git, porem para salvar esses arquivos no git é necessário dar o commit, que salva as alterações, se você quiser ver o status de seu git digite `git status`, e agora você vê que tem arquivos não salvos e para salvá-los vamos fazer nosso commit.
 	</p>
@@ -104,6 +111,7 @@
 	</p>	
 	<hr/>
 	<li>Modificando arquivos:</li>
+	</br>
 	<p>
 		Se você quiser adicionar um arquivos, ou modificá-los, tera que fazer um novo commit, para que ele carregue essas modificações para o git. E você pode modificar, abrindo seu editor, ou por comando mesmo, vamos supor que você queira acrescentar algo em seu README.md, pois por enquanto você só adicionou ele mais não colocou nada:
 	</p>
@@ -132,6 +140,7 @@
 	</p>	
 	<hr/>
 	<li>Voltando em versões anteriores:</li>
+	</br>
 	<p>
 		Se você fez uma modificação em um determinado arquivo e agora percebeu que acabou dando problema e precisa da versão anterior, o git também faz isso para você. Cada commit tem um código, e precisaremos deste código para poder voltar. Você pode consultar ele com o comando `$ git log`.
 	</p>
@@ -152,6 +161,7 @@
 	</p>	
 	<hr/>
 	<li>Navegando entre as branch:</li>
+	</br>
 	<p>
 		As branch, podem serem entendidas como versões do seu projeto, de padrão se inicia com a branch master, onde você adiciona, renomeia e modifica seus arquivos. Mas você pode sambem ter uma branch teste e após comitar em seu projeto e ver que pode adicionar ou testar um recurso, você pode adicionar uma nova versão como a teste e modificar testar e fazer o que quiser nela que na branch master estará intacta. Vamos fazer alguns testes para entender melhor esse recurso.
 	</p>
@@ -205,6 +215,7 @@
 	</code>	
 	<hr/>
 	<li>Revertendo modificações de um único arquivo:</li>
+	</br>
 	<p>
 		Aprendemos como reverter commits e trazer novas modificações, mas e se você modificou vários arquivos e quer voltar apenas um arquivo em como ele estava antes do commit anterior. E então precisaremos aprender um novo comando:
 	</p>
@@ -219,6 +230,7 @@
 	</p>	
 	<hr/>
 	<li>Salvando no GitHub:</li>
+	</br>
 	<p>
 		Você precisara agora salvar seus projetos no GitHub, pois ate agora, os arquivos estão salvos apenas em sua maquina local, você precisa passar isso para uma maquina remota como o GitHub. E para fazer isso você precisara fazer uma conta no GitHub, se não tiver e criar um repositório.
 	</p>
@@ -254,6 +266,7 @@
 	</p>	
 	<hr/>
 	<li>Dando Push e Pull:</li>
+	</br>
 	<p>
 		Se você ainda não sabe, Push é basicamente que empurrar, e quando se aplica ele no termina ou manda o GitHub dar um Push, é o mesmo que dizer empurre, ou transfira os arquivos para o GitHub. Já o Pull, busca arquivos alterados do GitHub para sua maquina. E além desses, ainda tem outro termo importante que vale citar, o fetch, que é usado para atualizar o repositório local, para ver se não foram feita nenhuma alteração do GitHub, sim da para alterar pelo GitHub 
 	<p>
@@ -272,11 +285,13 @@
 	</p>	
 	<hr/>
 	<li>Ignorando arquivos:</li>
+	</br>
 	<p>
 		Ignorar um arquivo no GitHub, é arquivar sem que mostre como um arquivo escondido, e para fazer isso, crie um arquivo chamado .gitignore, e nele coloque o que você quer deixar oculto, ou seja, ignorar. Escreva no arquivo que você criou, o nome dos arquivos que você quer ignorar.
 	</p>	
 	<hr/>
 	<li>Comando git revert:</li>
+	</br>
 	<p>
 		Esse comando tambem serve para reverter as ações, porem ele não perde as alterações, pois ele deixa o commit das alterações la, e cria um novo com a situação anterior. E se você quiser pegar de novo essas alterações, ela esta salva em seus commits e você só precisa dar um reset --hard:
 	</p>
@@ -289,6 +304,7 @@
 	</code>	
 	<hr/>
 	<li>Adicionando e Deletando branchs remotos e locais:</li>
+	</br>
 	<p>
 		Para enviar seus branchs para o seu repositório remoto, é só substituir o push de branch master para <nome do branch>, mas se você quer deletar esse branch que você já criou, escreva: 
 	</p>
@@ -312,6 +328,7 @@
 	</code>	
 	<hr/>
 	<li>Clonando Projetos:</li>
+	</br>
 	<p>
 		Na verdade isso é bem simples, é preciso apenas pegar a url do projeto que você que clonar e escrever:
 	</p>
@@ -326,6 +343,7 @@
 	</p>	
 	<hr/>
 	<li>Dicas Finais:</li>
+	</br>
 	<p>
 		1. Se você quer excluir um arquivo ou renomear do repositório remoto, pode fazer isso de seu terminal digitando o comando git remote, e após a ação que quer fazer, seja ela remover ou renomear.
 	</p>
