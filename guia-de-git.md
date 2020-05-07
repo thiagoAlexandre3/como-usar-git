@@ -46,9 +46,8 @@
 	</pre>
 	</code>
 	<p>
-		Mas se tiver usando outro sistema, acesse o site oficial  do  git, clicando <a href="https://git-scm.com/">aqui</a>, clique em download e clique no sistema operacional que você esta usando. Se você estiver usando Windows, ele sera intalado automiticamente, e se for Mac OS X, o site te dira o que fazer.
+		Mas se tiver usando outro sistema, acesse o site oficial  do  git, clicando aqui, clique em download e clique no sistema operacional que você esta usando. Se você estiver usando Windows, ele sera intalado automiticamente, e se for Mac OS X, o site te dira o que fazer.
 	</p>
-	<img src="/imagens/instalando-git-passo-um.png" width=650 height=450></img>
 	<hr/>	
 	<li>Iniciando com o Git:</li>
 	</br>
