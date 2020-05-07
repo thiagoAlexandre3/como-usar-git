@@ -62,11 +62,11 @@
 		(configurar seu email)
 		$ git config --global core.editor "seu editor"
 		(configurar seu editor padrão como o VS Code ou Sublime)
-		$ mkdir <nome do diretório> 
+		$ mkdir nome do diretório 
 		(Diretório de projetos)
-		$ git init <nome do repositório criado>
+		$ git init nome do repositório criado
 		(Aqui o git é iniciado em seu repositório com uma pasta .git)
-		md <nome do diretório>
+		cd nome do diretório
 		(aqui nos entramos no diretório que você ira salvar seus arquivos)
 	</pre>
 	</code>
@@ -161,7 +161,7 @@
 	<pre>
 		$ git log
 		(consultar o código)
-		$ git reset --hard <codigo>
+		$ git reset --hard codigo
 		(volta no commit que selecionou)
 	</pre>
 	</code>
@@ -219,7 +219,7 @@
 	</p>
 	<code>
 	<pre>
-		$ git diff <nome do arquivo>
+		$ git diff nome do arquivo
 		(ver a diferença entre determinado arquivo)
 	</pre>
 	</code>	
@@ -231,7 +231,7 @@
 	</p>
 	<code>
 	<pre>
-		$ git checkout HEAD -- <nome de arquivo>
+		$ git checkout HEAD -- nome de arquivo
 		(trazendo as configurações anteriores)
 	</pre>
 	</code>
@@ -322,13 +322,13 @@
 	<pre>
 		$ git branch
 		(consultar o branch)
-		$ git checkout <nome do branch>
+		$ git checkout nome do branch
 		(muda o branch)
-		$ git push origin <nome do branch>
+		$ git push origin nome do branch
 		(envia o branch para o repositório remoto)
 		$ git branch
 		(consultar o branch)
-		$ git push origin :<nome do branch>
+		$ git push origin nome do branch
 		(remover branch do repositório remoto)
 		$ git checkout master
 		(ir para branch master)
@@ -344,7 +344,7 @@
 	</p>
 	<code>
 	<pre>
-		$ git clone <link>
+		$ git clone link
 		(clone o repositório tal)
 	</pre>
 	</code>
