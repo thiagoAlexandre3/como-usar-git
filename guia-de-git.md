@@ -45,6 +45,9 @@
 		(após isso digite sua senha e aperte enter)
 	</pre>
 	</code>
+	<p>
+		Mas se tiver usando outro sistema, acesse o site oficial  do  git, clicando aqui, clique em download e clique no sistema operacional que você esta usando. Se você estiver usando Windows, ele sera intalado automiticamente, e se for Mac OS X, o site te dira o que fazer.
+	</p>
 	<hr/>	
 	<li>Iniciando com o Git:</li>
 	</br>
