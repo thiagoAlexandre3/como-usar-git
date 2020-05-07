@@ -33,16 +33,26 @@
 	<li>Iniciando aos primeiros comandos:</li>
 	</br>
 	<ul type="circle">
-	<li>Os comandos de manipulação do Git:</li>
+	<li>Instalando o Git:</li>
 	</br>
 	<p>
-		Agora que você, se não sabia, já sabe o que é o git, está pronto para continuar e ver os principais comandos que se deve saber sobre o git, que irão facilitar a sua vida, seja você um simples usuário afim de tal ferramenta, ou até mesmo um programador júnior ou experiente.
+		Agora que você, se não sabia, já sabe o que é o Git, está pronto para continuar e ver os principais comandos que se deve saber, que irão facilitar a sua vida, seja você um simples usuário afim de tal ferramenta, ou até mesmo um programador júnior ou experiente. Mas antes, temos que instalar o Git, e isso é bem simples de se fazer. Para usuários do sistema linux, basta digitar no terminal o seguinte comando:
 	</p>	
+	<code>
+	<pre>
+		$sudo apt install git
+		(Comando significa: Com os privilegios de administrador, instale o git)
+		(após isso digite sua senha e aperte enter)
+	</pre>
+	</code>
 	<hr/>	
 	<li>Iniciando com o Git:</li>
 	</br>
 	<p>
-		Você precisara fazer algumas configurações em seu git apos instalar em sua maquina, e para começar os seus projetos, você precisara de uma pasta para guardar seus projetos. Este guia estará sempre mostrando comandos no terminal para o Linux, se quiser usar outro sistema terá que dar uma pesquisada mais aí.
+		Você precisara fazer algumas configurações em seu git apos instalar em sua maquina, e para começar os seus projetos, crie uma pasta para guardar seus projetos. 
+	</p>
+	<p>
+		Obs.: Este guia estará sempre mostrando comandos no terminal para o Linux, se quiser usar outro sistema, os comandos do git, seram os mesmos, mas talvez, precise dar uma pesquisada melhor, pois alguns comandos do linux, é diferente de outros sistemas.
 	</p>
 	<code>
 	<pre>
