@@ -46,7 +46,11 @@
 	</pre>
 	</code>
 	<p>
-		Mas se tiver usando outro sistema, acesse o site oficial  do  git, clicando aqui, clique em download e clique no sistema operacional que você esta usando. Se você estiver usando Windows, ele sera intalado automiticamente, e se for Mac OS X, o site te dira o que fazer.
+		Mas se tiver usando outro sistema, acesse o site oficial  do  git, clicando aqui, clique em download e clique no sistema operacional que você esta usando. 
+	<img <img src="imagens/intalando-git-passo-um.png" width=600 height=450>
+	<p>
+		Se você estiver usando Windows, ele sera intalado automiticamente, e se for Mac OS X, o site te dira o que fazer.
+	</p>
 	</p>
 	<hr/>	
 	<li>Iniciando com o Git:</li>
