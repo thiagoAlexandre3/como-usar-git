@@ -47,11 +47,12 @@
 	</code>
 	<p>
 		Mas se tiver usando outro sistema, acesse o site oficial  do  git, clicando aqui, clique em download e clique no sistema operacional que você esta usando. 
-	<img <img src="imagens/intalando-git-passo-um.png">
+	</br>
+	<img src="imagens/intalando-git-passo-um.png">
 	<p>
 		Se você estiver usando Windows, ele sera intalado automiticamente, e se for Mac OS X, o site te dira o que fazer.
 	</p>
-	</p>
+	<img src="imagens/intalando-git-passo-dois.png">
 	<hr/>	
 	<li>Iniciando com o Git:</li>
 	</br>
