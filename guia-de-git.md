@@ -202,6 +202,21 @@
 		(Ver que mudamos para essa nova branch)
 	</pre>
 	</code>	
+	<p>
+		E se você gostar dessas novas modificações, e querer concratisá-las na branch master, presisara dar um merge, que tambem é bem simples.
+	</p>
+	<code>
+	<pre>
+		$ git branch
+		(Ver em qual branch estamos)
+		$ git checkout teste
+		(Navega para branch criada anteriormente)
+		$ git merge master
+		(Salva as modificações na branch master)
+		$ git checkout master
+		(Volta para a branch master)
+	</pre>
+	</code>
 	<hr/>
 	<li>Comando diff:</li>
 	<p>
@@ -336,7 +351,7 @@
 		(envia o branch para o repositório remoto)
 		$ git branch
 		(consultar o branch)
-		$ git push origin nome do branch
+		$ git push origin :nome do branch
 		(remover branch do repositório remoto)
 		$ git checkout master
 		(ir para branch master)
@@ -360,11 +375,30 @@
 		Não é possível dar push já que você clonou um projeto que já pertencia a alguém, se você quiser dar push em um projeto que não é seu, é preciso fazer um fork do projeto pronto, clonar ele e ai sim dar seu push.
 	</p>	
 	<hr/>
+	<li>Organizando seus commits:</li>
+	</br>
+	<p>
+		Se você quer se tornar, ou já é um programador, sabe que um bom programador, é organizado. Então limpar seus commits é muito importante. Seus comits, devem ser feitos uma de cada vez. Não podemos fazer commits quando modificamos um arquivos, renomeamos outro, criamos um terceiro, tudo junto, faça um commit para a modificação, outro para o arquivo renomeado e outro para o arquivo criado. E para isso você pode utilisar do comando reset, se quer tirar arquivos do stage, e comitar uma coisa de cada vez:
+	</p>
+	<code>
+	<pre>
+		$git status
+		(consutar o stage)
+		$ git reset -- nome do arquivo
+		(tira ele do stage)
+		$ git commit -m "Modificando arquivo"
+		(Faz um commit com descrição sem adicionar os outros arquivos)
+	</pre>
+	</code>
+	<p>
+		É importante colocar apenas -m, pois se você digitar -am, ele ira adicionar tudo no stage e seu comando não tera servido de nada, pois dai, você tera comitado tudo junto novamente. Tambem podemos utilizar do reset --soft, para voltar os commits sem que apague as alteraçoes.
+	</p>
 	<li>Dicas Finais:</li>
 	</br>
 	<p>
-		1. Se você quer excluir um arquivo ou renomear do repositório remoto, pode fazer isso de seu terminal digitando o comando git remote, e após a ação que quer fazer, seja ela remover ou renomear.
+		1. Se você quer excluir um arquivo ou renomear do repositório remoto, pode fazer isso do seu terminal digitando o comando git remote, e após a ação que quer fazer, seja ela remover ou renomear.
 	</p>
 	<p>
 		2. Navegar entre suas branch é muito importante pois com isso, você pode recuperar seus arquivos fazendo testes em outras branch.
 	</p>
+	
