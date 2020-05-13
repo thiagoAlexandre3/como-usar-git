@@ -382,7 +382,7 @@
 	</p>
 	<code>
 	<pre>
-		$git status
+		$ git status
 		(consutar o stage)
 		$ git reset -- nome do arquivo
 		(tira ele do stage)
@@ -395,7 +395,7 @@
 	</p>
 	<code>
 	<pre>
-		$git log
+		$ git log
 		(consutar o historico de commits)
 		$ git reset --soft numero do commit
 		(volta para uma versão estável)
