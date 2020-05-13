@@ -280,14 +280,14 @@
 	</pre>
 	</code>
 	<p>
-		Agora precisamos passar essa chave para o GitHub e transferir os arquivos. Entre no local onde ele baixou a chave, copie essa chave (não o arquivo, o conteúdo dele), acesse seu GitHub clique em seu avatar do canto superior direito e clica em setings. Após isso clique em ssh and gpq keys, crie uma nova ssh e cole a chave na opção informada, e escreva um titulo, que lembre seu pc por exemplo <seu usuário> home.
+		Agora precisamos passar essa chave para o GitHub e transferir os arquivos. Entre no local onde ele baixou a chave, copie essa chave (não o arquivo, o conteúdo dele), acesse seu GitHub clique em seu avatar do canto superior direito e clica em setings. Após isso clique em ssh and gpq keys, crie uma nova ssh e cole a chave na opção informada, e escreva um titulo, que lembre seu pc por exemplo seu usuário home.
 	</p>
 	<p>
 		Pronto! você agora tem uma chave ssh, vamos passar os arquivos através dessa chave. Escreva em seu terminal:
 	</p>
 	<code>
 	<pre>
-		$ git remote add origin https://<o endereço de seu repositório do github>.git
+		$ git remote add origin https://o endereço de seu repositório do github.git
 		(adicionar repositório origin em ...)
 		(você pode ver se ele adicionou com git remote)
 		$ git push -u origin master
@@ -330,7 +330,7 @@
 	</p>
 	<code>
 	<pre>
-		$ git revert --no-edit <codigo do commit que deu o problema>
+		$ git revert --no-edit codigo do commit que deu o problema
 		(faz um novo commit com a situação anterior do commit que deu o problema)
 		</pre>
 	</pre>
@@ -339,7 +339,7 @@
 	<li>Adicionando e Deletando branchs remotos e locais:</li>
 	</br>
 	<p>
-		Para enviar seus branchs para o seu repositório remoto, é só substituir o push de branch master para <nome do branch>, mas se você quer deletar esse branch que você já criou, escreva: 
+		Para enviar seus branchs para o seu repositório remoto, é só substituir o push de branch master para nome do branch, mas se você quer deletar esse branch que você já criou, escreva: 
 	</p>
 	<code>
 	<pre>
@@ -391,8 +391,20 @@
 	</pre>
 	</code>
 	<p>
-		É importante colocar apenas -m, pois se você digitar -am, ele ira adicionar tudo no stage e seu comando não tera servido de nada, pois dai, você tera comitado tudo junto novamente. Tambem podemos utilizar do reset --soft, para voltar os commits sem que apague as alteraçoes.
+		É importante colocar apenas -m, pois se você digitar -am, ele ira adicionar tudo no stage e seu comando não tera servido de nada, pois dai, você tera comitado tudo junto novamente. Tambem podemos utilizar do reset --soft, para voltar os commits sem que apague as alteraçoes. Por exemplo, se você ja cometeu o erro, e comitou arquivos não relacionais em um só commit, mas ainda não enviou para o servidor remoto, podemos aplicar os conhecimentos vistos antes e volta a uma versão que está boa e fazer o commits novamente, com o comando soft:
 	</p>
+	<code>
+	<pre>
+		$git log
+		(consutar o historico de commits)
+		$ git reset --soft numero do commit
+		(volta para uma versão estável)
+		$ git reset -- nome do arquivo
+		(tira arquivos do stage)
+		$ git commit -m "Modificando arquivo"
+		(Faz um commit com descrição sem adicionar os outros arquivos)
+	</pre>
+	</code>
 	<li>Dicas Finais:</li>
 	</br>
 	<p>
@@ -401,4 +413,9 @@
 	<p>
 		2. Navegar entre suas branch é muito importante pois com isso, você pode recuperar seus arquivos fazendo testes em outras branch.
 	</p>
-	
+	<p>
+		3. Se quiser mais comandos, ou saber melhor sobre alguns em especificos, entre no guia de descrição, o segundo guia do meu GitHub, @thiagoAlexandre3, e encontrara alguns comandos mais detalhados e outros não citados neste guia.
+	</p>
+	<p>
+		4. Para avançar com seus estudos, entre no cite oficial do Git, clicando <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell">aqui</a>, e assim, tera tecnnico sobre o Git.
+	</p>
